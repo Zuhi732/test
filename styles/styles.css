@@ -1,0 +1,414 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3 {
+    margin: 0.5rem 0;
+  }
+  
+  .banner {
+    background-color: #d8f3dc;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+  .banner-title{
+    font-weight: bold;
+    font-size: 75px;
+  }
+  
+  .banner-img {
+    max-width: 40%;
+  }
+  
+  .btn-primary {
+    background-color: #007b55;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem; /* Add spacing above the button */
+  }
+  /* Pillars Section Styling */
+.pillars {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 2rem 1rem; /* Top-bottom and left-right padding */
+    text-align: center; /* Center-align text */
+  }
+  
+  .pillars h2 {
+    font-size: 2rem; /* Larger heading size */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 2rem; /* Space below the heading */
+  }
+  
+  /* Pillars Container */
+  .pillars-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive cards */
+    gap: 1.5rem; /* Space between the cards */
+    max-width: 1200px; /* Restrict maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Individual Pillar Card */
+  .pillar-card {
+    background-color: #ffffff; /* White card background */
+    padding: 1.5rem; /* Inner padding */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align card content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  }
+  
+  .pillar-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .pillar-icon {
+    width: 60px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Space below the icon */
+  }
+  
+  .pillar-card h3 {
+    font-size: 1.2rem; /* Medium heading size */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Space below the title */
+  }
+  
+  .pillar-card p {
+    font-size: 0.95rem; /* Smaller text size */
+    color: #555; /* Muted text color */
+    line-height: 1.5; /* Improve readability */
+  }
+  /* Vision Section */
+.vision {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .vision h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .vision p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Vision Cards */
+  .vision-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .vision-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .vision-card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .vision-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .vision-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .vision-card .btn-secondary {
+    background-color: #007b55;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vision-card .btn-secondary:hover {
+    background-color: #005f42;
+  }
+  
+  /* Specific Card Colors */
+  .blue {
+    background-color: #e3f2fd;
+  }
+  
+  .green {
+    background-color: #e8f5e9;
+  }
+  
+  .yellow {
+    background-color: #fffde7;
+  }
+  
+  /* Quote Section */
+  .quote {
+    background-color: #fff;
+    padding: 42px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .quote blockquote {
+
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin: 0 10px;
+    line-height: 1.6;
+  }
+  
+  .quote .author {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .quote .designation {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  
+  .donate {
+    text-align: center;
+    border-radius: 5px;
+    padding: 32px;
+    
+  }
+  
+  .donate-options button  {
+    margin: 0.5rem;
+    margin-bottom:1.5rem;
+    border-radius: 5px;
+    padding: 1rem 2rem; /* Increased padding for a larger button size */
+    width: 160px; /* Set a fixed width for uniform size */
+    height: 60px; /* Set a fixed height for consistent appearance */
+    font-size: 1.2rem; /* Adjust font size to make the text larger */
+    border: 1px solid #ddd; 
+    background-color: antiquewhite; /* Ensure consistent background color */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add a transition for hover effects */
+}
+
+.text{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    background-color: white;
+    padding: 2rem;
+    height: 5px;
+    width: 50%;
+    border-color: #e0f7fa;
+    
+} 
+  
+  .news {
+    padding: 2rem;
+    
+  }
+  
+  /* News Card Styling */
+.news-card {
+    display: flex; /* Align text and image side by side */
+    justify-content: space-between; /* Space out text and image */
+    align-items: center; /* Vertically align the items */
+    background-color: #ffffff; /* Set a white background for the card */
+    padding: 1.5rem; /* Add padding inside the card */
+    border-radius: 15px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin: 1rem 0; /* Add spacing between cards */
+    max-width: 1200px; /* Restrict maximum width of the card */
+    margin-left: auto; /* Center the card horizontally */
+    margin-right: auto; /* Center the card horizontally */
+  }
+  /* Text Section Styling */
+.news-text {
+    flex: 1; /* Allow the text section to grow */
+    margin-right: 1.5rem; /* Add space between text and image */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .news-text h3 {
+    font-size: 1.8rem; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  
+  
+  .news-text .source {
+    color: #007b55; /* Highlight the source with green */
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .news-text .description {
+    font-size: 1rem;
+    color: #555; /* Subtle text color */
+    margin-bottom: 1.5rem;
+  }
+  
+  .news-text .btn-primary {
+    background-color: #007b55;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .news-text .btn-primary:hover {
+    background-color: #005f42; /* Darker green on hover */
+  }
+  
+  /* Image Styling */
+  .news-image {
+    width: 300px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  }
+  
+  
+  /* Newsletter Section Styling */
+.newsletter {
+    background-color: #d8f3dc; /* Light green background */
+    padding: 2rem; /* Adds padding around the section */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+    max-width: 900px; /* Restrict maximum width */
+    margin: 2rem auto; /* Center horizontally with top-bottom spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Content Styling */
+  .newsletter-content h2 {
+    font-size: 2rem; /* Larger font size for the heading */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .newsletter-content p {
+    font-size: 1rem; /* Standard text size */
+    color: #555; /* Muted text color for readability */
+    margin-bottom: 1.5rem; /* Space below the paragraph */
+  }
+  
+  /* Form Styling */
+  .newsletter-form {
+    display: flex; /* Align input and button inline */
+    justify-content: center; /* Center-align the elements */
+    gap: 1rem; /* Space between input and button */
+  }
+  
+  .email-input {
+    flex: 1; /* Allow input to take up available space */
+    padding: 0.75rem; /* Add padding for better appearance */
+    font-size: 1rem; /* Larger font for readability */
+    border: 1px solid #ddd; /* Light border for input */
+    border-radius: 5px; /* Rounded corners for input */
+    max-width: 500px; /* Restrict input width */
+  }
+  
+  .btn-primary {
+    background-color: #007b55; /* Green button */
+    color: white; /* White text */
+    border: none;
+    padding: 0.75rem 1.5rem; /* Add padding for a larger button */
+    font-size: 1rem; /* Standard font size */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005f42; /* Darker green on hover */
+  }
+  
+  /* Note Styling */
+  .note {
+    margin-top: 1rem; /* Add spacing above the note */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #777; /* Muted color for the note */
+  }
+  
+  
+  .quotes {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .vision {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .vision-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card {
+    padding: 1rem;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  .blue {
+    background-color: #e0f7fa;
+  }
+  
+  .green {
+    background-color: #e8f5e9;
+  }
+  
+  .yellow {
+    background-color: #fffde7;
+  }
+  
