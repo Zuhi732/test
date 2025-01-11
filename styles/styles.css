@@ -1,13 +1,36 @@
-body {
+
+.work-sans-normal {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* body { 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+  }*/
   
   h1, h2, h3 {
     margin: 0.5rem 0;
   }
+
+
+
+  
+/* Nav-styles */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li{
+  list-style: none;
+  display: flex;
+  
+}
+
   
   .banner {
     background-color: #d8f3dc;
@@ -213,7 +236,8 @@ body {
   .donate {
     text-align: center;
     border-radius: 5px;
-    padding: 32px;
+    padding: 80px ;
+    height: 464px;
     
   }
   
@@ -221,12 +245,13 @@ body {
     margin: 0.5rem;
     margin-bottom:1.5rem;
     border-radius: 5px;
-    padding: 1rem 2rem; /* Increased padding for a larger button size */
-    width: 160px; /* Set a fixed width for uniform size */
-    height: 60px; /* Set a fixed height for consistent appearance */
+    padding: 30px 52px 30px 52px; /* Increased padding for a larger button size */
+    width: 200px; /* Set a fixed width for uniform size */
+    height: 75px; /* Set a fixed height for consistent appearance */
+    gap: 24px;
     font-size: 1.2rem; /* Adjust font size to make the text larger */
     border: 1px solid #ddd; 
-    background-color: antiquewhite; /* Ensure consistent background color */
+    background-color: #fffde7; /* Ensure consistent background color */
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease; /* Add a transition for hover effects */
@@ -239,7 +264,7 @@ body {
     background-color: white;
     padding: 2rem;
     height: 5px;
-    width: 50%;
+    width: 63%;
     border-color: #e0f7fa;
     
 } 
@@ -248,6 +273,62 @@ body {
     padding: 2rem;
     
   }
+
+  .opinion-section {
+    width: 1180px;
+    height: auto; /* Hug height */
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.opinion-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.opinion-container {
+    background: #d6efda;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.opinion-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.opinion-container th,
+.opinion-container td {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.opinion-container th {
+    background: #c6e4d6;
+    font-weight: bold;
+    color: #333;
+}
+
+.opinion-container td {
+    font-size: 1rem;
+    color: #666;
+}
+
+.opinion-container select {
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+
   
   /* News Card Styling */
 .news-card {
@@ -306,6 +387,8 @@ body {
   .news-text .btn-primary:hover {
     background-color: #005f42; /* Darker green on hover */
   }
+
+  
   
   /* Image Styling */
   .news-image {
@@ -318,18 +401,18 @@ body {
   
   /* Newsletter Section Styling */
 .newsletter {
-    background-color: #d8f3dc; /* Light green background */
-    padding: 2rem; /* Adds padding around the section */
+    background-color: #d8f3dc; 
+    padding: 42px; /* Adds padding around the section */
     border-radius: 20px; /* Rounded corners */
     text-align: center; /* Center-align text */
-    max-width: 900px; /* Restrict maximum width */
-    margin: 2rem auto; /* Center horizontally with top-bottom spacing */
+    max-width:1500px; /* Restrict maximum width */
+    margin: 32px  62px; /* Center horizontally with top-bottom spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
   /* Content Styling */
   .newsletter-content h2 {
-    font-size: 2rem; /* Larger font size for the heading */
+    font-size: 32px; /* Larger font size for the heading */
     font-weight: bold; /* Bold text */
     margin-bottom: 1rem; /* Space below the heading */
   }
