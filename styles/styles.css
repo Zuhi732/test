@@ -267,7 +267,9 @@ nav ul li{
 
 /* Hover effect for all buttons */
 .donate-options button:hover {
-    background-color: #f5f5f5; /* Light hover effect */
+  background-color: #f5f5f5; /* Change background on hover */
+  border-color: #27ae60; /* Add a green border on hover */
+  color: #27ae60; /* Change text color */
 }
 
 /* Active button style for 200 Taka */
