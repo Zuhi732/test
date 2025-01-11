@@ -5,12 +5,7 @@
   font-style: normal;
 }
 
-/* body { 
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }*/
+
   
   h1, h2, h3 {
     margin: 0.5rem 0;
@@ -38,7 +33,12 @@ nav ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
   } 
+  .color{
+    color: #0E0E0E80;
+    ;
+  }
   .banner-title{
     font-weight: bold;
     font-size: 75px;
@@ -239,22 +239,42 @@ nav ul li{
     padding: 80px ;
     height: 464px;
     
+    
+    
   }
   
-  .donate-options button  {
+  .donate-options {
+    display: flex;
+    justify-content: center;
+    gap: 24px; /* Space between buttons */
+    margin-bottom: 1.5rem;
+}
+
+.donate-options button {
     margin: 0.5rem;
-    margin-bottom:1.5rem;
-    border-radius: 5px;
-    padding: 30px 52px 30px 52px; /* Increased padding for a larger button size */
-    width: 200px; /* Set a fixed width for uniform size */
-    height: 75px; /* Set a fixed height for consistent appearance */
-    gap: 24px;
-    font-size: 1.2rem; /* Adjust font size to make the text larger */
-    border: 1px solid #ddd; 
-    background-color: #fffde7; /* Ensure consistent background color */
+    padding: 30px 52px; /* Increased padding for larger button size */
+    width: 200px; /* Fixed width for uniform size */
+    height: 75px; /* Fixed height for consistent appearance */
+    font-size: 1.2rem; /* Font size for better readability */
+    font-weight: bold;
     text-align: center;
+    border: 1px solid #ddd; /* Border for all buttons */
+    background-color: white; 
     cursor: pointer;
-    transition: all 0.3s ease; /* Add a transition for hover effects */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for all buttons */
+.donate-options button:hover {
+    background-color: #f5f5f5; /* Light hover effect */
+}
+
+/* Active button style for 200 Taka */
+.donate-options button.active {
+    background-color: #c6e4d6; /* Highlighted background */
+    border-color: #27ae60; /* Green border */
+    color: #333; /* Text color for active button */
 }
 
 .text{
@@ -269,11 +289,7 @@ nav ul li{
     
 } 
   
-  .news {
-    padding: 2rem;
-    
-  }
-
+  
   .opinion-section {
     width: 1180px;
     height: auto; /* Hug height */
@@ -331,6 +347,11 @@ nav ul li{
 
   
   /* News Card Styling */
+  .news1 {
+    padding: 2rem;
+    
+  }
+
 .news-card {
     display: flex; /* Align text and image side by side */
     justify-content: space-between; /* Space out text and image */
@@ -391,13 +412,80 @@ nav ul li{
   
   
   /* Image Styling */
-  .news-image {
-    width: 300px; /* Fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add rounded corners to the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
-  }
   
+  .news-section {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the card horizontally */
+    padding: 40px 0; /* Add padding to the section */
+    background-color: #f5f5f5;
+}
+
+.news-card {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and text */
+    max-width: 1200px; /* Limit the width of the card */
+    width: 100%; /* Ensure it scales properly */
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+    width: 40%; /* Fix the image width */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.news-text {
+    flex: 1; /* Allow the text to fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to the top */
+}
+
+.news-text h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.source img {
+    width: 80px; /* Adjust logo size */
+    vertical-align: middle;
+}
+
+.date {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; /* Align button to the start */
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e8449;
+}
+
   
   /* Newsletter Section Styling */
 .newsletter {
